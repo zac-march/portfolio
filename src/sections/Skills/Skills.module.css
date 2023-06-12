@@ -1,0 +1,28 @@
+.blurb ul {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  width: max-content;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.blurb ul hr {
+  height: 2px;
+  background-color: #cccccc57;
+  border: none;
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+.blurb li {
+  z-index: 100;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(26, 26, 26);
+  padding: 2px 5px;
+  border-radius: 5px;
+}

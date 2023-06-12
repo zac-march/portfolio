@@ -4,6 +4,7 @@
 :root {
   --main-bg-color: #1c1c1c;
   --main-font-color: white;
+  --ticker-width: 0;
 }
 body {
   margin: 0;
@@ -38,4 +39,11 @@ p {
   margin-top: 0;
   font-size: 1.2rem;
   line-height: 32px;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

@@ -2,6 +2,7 @@ import "./App.css";
 import Hero from "./sections/Hero/Hero";
 import Nav from "./sections/Nav/Nav";
 import Portfolio from "./sections/Portfolio/Portfolio";
+import Skills from "./sections/Skills/Skills";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <main>
         <Hero />
         <Portfolio />
+        <Skills />
       </main>
     </div>
   );
