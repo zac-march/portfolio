@@ -1,5 +1,14 @@
+.container {
+  margin: 50px 0;
+}
+
 .label {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 1.1rem;
-  margin-bottom: 30px;
+}
+.container hr {
+  margin-bottom: 20px;
+  height: 2px;
+  background-color: #cccccc65;
+  border: none;
 }
