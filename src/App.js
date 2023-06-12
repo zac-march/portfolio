@@ -1,6 +1,7 @@
 import "./App.css";
 import Hero from "./components/Hero/Hero";
 import Nav from "./components/Nav/Nav";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Nav />
       <main>
         <Hero />
+        <Portfolio />
       </main>
     </div>
   );
