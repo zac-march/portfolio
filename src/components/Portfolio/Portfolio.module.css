@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  gap: 100px;
+}
+
+.blurb {
+  flex: 0.3;
+}
+
+.projects {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
