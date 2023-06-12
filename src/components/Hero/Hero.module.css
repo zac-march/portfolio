@@ -1,0 +1,10 @@
+.container h1,
+.container h2 {
+  font-size: 3.15rem;
+  line-height: 3.5rem;
+}
+
+.container p {
+  font-size: 1.2rem;
+  line-height: 32px;
+}
