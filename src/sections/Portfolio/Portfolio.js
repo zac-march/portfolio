@@ -1,8 +1,8 @@
 import style from "./Portfolio.module.css";
 import React from "react";
 import projectData from "../../data/projects";
-import Project from "../Project/Project";
-import SectionLabel from "../SectionLabel/SectionLabel";
+import Project from "../../components/Project/Project";
+import SectionLabel from "../../components/SectionLabel/SectionLabel";
 
 function Portfolio() {
   return (
