@@ -4,7 +4,7 @@ import React from "react";
 function Project({ data }) {
   return (
     <div className={style.container}>
-      <img src={data.imgURL} />
+      <img alt={"Project preview"} src={data.imgURL} />
       <h3>{data.title}</h3>
       <p>{data.description}</p>
       <ul className={style.stack}>
