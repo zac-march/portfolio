@@ -7,7 +7,7 @@ import SectionLabel from "../../components/SectionLabel/SectionLabel";
 function Portfolio() {
   return (
     <>
-      <SectionLabel title={"my work"} />
+      <SectionLabel id={"portfolio"} title={"my work"} />
       <section className={style.container}>
         <section className={style.blurb}>
           <h1>I build things</h1>

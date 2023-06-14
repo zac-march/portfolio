@@ -1,9 +1,9 @@
 import style from "./SectionLabel.module.css";
 import React from "react";
 
-function SectionLabel({ title }) {
+function SectionLabel({ title, id }) {
   return (
-    <div className={style.container}>
+    <div id={id} className={style.container}>
       <hr></hr>
       <div className={style.label}>{title}</div>
     </div>

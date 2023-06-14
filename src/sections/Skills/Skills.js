@@ -7,7 +7,7 @@ import React from "react";
 function Skills() {
   return (
     <>
-      <SectionLabel title={"Skills"} />
+      <SectionLabel id={"skills"} title={"Skills"} />
       <section className={style.container}>
         <section className={style.blurb}>
           <h1>The tools I use</h1>
