@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 7rem 0;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+}
+
+.title > h1 {
+  font-size: 5rem;
+}
