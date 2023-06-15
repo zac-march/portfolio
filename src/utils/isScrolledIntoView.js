@@ -1,8 +1,9 @@
 function isScrolledIntoView(el) {
-  var rect = el.getBoundingClientRect();
-  var elemTop = rect.top;
-  var elemBottom = rect.bottom;
-  var isVisible = elemTop >= 0 && elemBottom <= window.innerHeight;
+  const rect = el.getBoundingClientRect();
+  const isVisible =
+    rect.top >= 0 &&
+    rect.bottom <=
+      window.innerHeight - (window.innerHeight - window.innerHeight / 2);
   return isVisible;
 }
 
