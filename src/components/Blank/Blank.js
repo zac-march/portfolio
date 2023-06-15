@@ -1,4 +1,4 @@
-import "./Blank.module.css";
+import style from "./Blank.module.css";
 import React from "react";
 
 function Blank() {
