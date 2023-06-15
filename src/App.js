@@ -1,4 +1,5 @@
 import "./App.css";
+import About from "./sections/About/About";
 import Hero from "./sections/Hero/Hero";
 import Nav from "./sections/Nav/Nav";
 import Portfolio from "./sections/Portfolio/Portfolio";
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <Portfolio />
         <Skills />
+        <About />
       </main>
     </div>
   );
