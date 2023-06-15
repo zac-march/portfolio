@@ -8,27 +8,30 @@ function Nav() {
     document.querySelectorAll(`.nav-link`).forEach((ele) => {
       ele.classList.remove(style.active);
     });
-    el.classList.add(style.active);
+    if (el.id !== "nav-hero") el.classList.add(style.active);
   }
 
-  const processSectionChange = throttle(() => {
+  const sectionChange = throttle(() => {
     const anchors = document.querySelectorAll(".anchor");
     anchors.forEach((anchor) => {
       if (isScrolledIntoView(anchor)) {
         const linkEl = document.querySelector(`#nav-${anchor.id}`);
-        if (linkEl) setActiveLink(linkEl);
+        if (linkEl) {
+          setActiveLink(linkEl);
+        }
       }
     });
-  }, 500);
+  }, 50);
 
   useEffect(() => {
-    window.addEventListener("scroll", processSectionChange);
+    window.addEventListener("scroll", sectionChange);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <nav className={style.container}>
       <div className={style.wrapper}>
-        <a href="#hero">
+        <a href="#hero" className={"nav-link"} id={"nav-hero"}>
           <h1>ZM</h1>
         </a>
         <ul>
