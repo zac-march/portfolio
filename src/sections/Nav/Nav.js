@@ -12,10 +12,7 @@ function Nav() {
   }
 
   const processSectionChange = throttle(() => {
-    const anchors = [
-      document.querySelector("#portfolio"),
-      document.querySelector("#skills"),
-    ];
+    const anchors = document.querySelectorAll(".anchor");
     anchors.forEach((anchor) => {
       if (isScrolledIntoView(anchor)) {
         const linkEl = document.querySelector(`#nav-${anchor.id}`);
@@ -31,7 +28,7 @@ function Nav() {
   return (
     <nav className={style.container}>
       <div className={style.wrapper}>
-        <a href="#">
+        <a href="#hero">
           <h1>ZM</h1>
         </a>
         <ul>
@@ -46,12 +43,12 @@ function Nav() {
             </a>
           </li>
           <li>
-            <a id={"nav-about"} className={"nav-link"} href="#">
+            <a id={"nav-about"} className={"nav-link"} href="#about">
               about me
             </a>
           </li>
           <li>
-            <a id={"nav-contact"} className={"nav-link"} href="#">
+            <a id={"nav-contact"} className={"nav-link"} href="#contact">
               contact me
             </a>
           </li>
