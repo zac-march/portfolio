@@ -1,5 +1,6 @@
 import style from "./Project.module.css";
 import React from "react";
+import uniqid from "uniqid";
 
 function Project({ data }) {
   return (
@@ -9,7 +10,7 @@ function Project({ data }) {
       <p>{data.description}</p>
       <ul className={style.stack}>
         {data.stack.map((tech) => (
-          <li>{tech}</li>
+          <li key={uniqid()}>{tech}</li>
         ))}
       </ul>
       <div className={style.links}>

@@ -1,5 +1,6 @@
 import style from "./Ticker.module.css";
 import React from "react";
+import uniqid from "uniqid";
 
 function Ticker({ data }) {
   const imgWidth = 20;
@@ -11,7 +12,7 @@ function Ticker({ data }) {
   );
 
   const listElements = data.map((icon) => (
-    <li style={{ width: `${imgWidth}rem` }}>
+    <li key={uniqid()} style={{ width: `${imgWidth}rem` }}>
       <img alt="" src={icon.iconURL} />
     </li>
   ));

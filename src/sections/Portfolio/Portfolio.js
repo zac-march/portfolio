@@ -3,6 +3,7 @@ import React from "react";
 import projectData from "../../data/projects";
 import Project from "../../components/Project/Project";
 import SectionLabel from "../../components/SectionLabel/SectionLabel";
+import uniqid from "uniqid";
 
 function Portfolio() {
   return (
@@ -30,7 +31,7 @@ function Portfolio() {
         </section>
         <section className={style.projects}>
           {projectData.map((project) => (
-            <Project data={project} />
+            <Project key={uniqid()} data={project} />
           ))}
         </section>
       </section>
