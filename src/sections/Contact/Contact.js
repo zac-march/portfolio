@@ -9,7 +9,7 @@ function Contact() {
       <SectionLabel id={"contact"} title={"contact me"} />
       <section className={style.container}>
         <div className={style.title}>
-          <h1>Lets work Together</h1>
+          <h1>Let's work Together</h1>
           <div className={style.socials}>
             <SocialLink title={"Github"} url={"https://github.com/zac-march"} />
             <SocialLink
