@@ -1,0 +1,16 @@
+.link {
+  color: white;
+  text-decoration: none;
+  transition: all 0.12s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  display: block;
+  font-size: 2rem;
+}
+
+.link:hover {
+  color: #aeaeae;
+  transform: scale(1.05);
+}
+
+.link:active {
+  transform: scale(0.95);
+}
